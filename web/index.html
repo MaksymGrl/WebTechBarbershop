@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            
+            <h1>Вітаємо в нашому барбершопі! </h1>
+            <nav>
+                <ul>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="#booking">Бронювання</a></li>
+                    <li><a href="#special-offers">Спеціальні пропозиції</a></li>
+                    <li><a href="contact.html">Зв'яжіться з нами</a></li>
+                    
+                </ul>
+            </nav>
+            
+        </div>
+    </header>
+    <main>
+        <section id="services">
+            <h2>Наші послуги</h2>
+            <p>Ми пропонуємо широкий спектр послуг з догляду за собою, розроблених спеціально для кожного пана та пані</p>
+            <table>
+                <tr>
+                    <th>Послуги</th>
+                    <th>Ціни</th>
+                </tr>
+                <tr>
+                    <td>Стрижка</td>
+                    <td>₴400</td>
+                </tr>
+                <tr>
+                    <td>Підрівнювання бороди</td>
+                    <td>₴200</td>
+                </tr>
+            </table>
+        </section>
+        <section id="booking">
+            <h2>Запишіться на прийом</h2>
+            <form action="submit_booking.php" method="post">
+                <label for="service">Виберіть послугу:</label>
+                <select name="service" id="service">
+                    <option value="haircut">Стрижка</option>
+                    <option value="beard_trim">Підрівнювання бороди</option>
+                </select>
+                <label for="barber">Вибери перукаря:</label>
+                <select name="barber" id="barber">
+                    <option value="john_doe">Павло Мельник</option>
+                    <option value="jane_doe">Ігор Ткаченко</option>
+                </select>
+                <label for="date">Дата:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Час:</label>
+                <input type="time" id="time" name="time" required>
+                <input type="submit" value="Записатись">
+            </form>
+        </section>
+        <section id="special-offers">
+            <h2>Спеціальні пропозиції</h2>
+            <ul>
+                <li>10% зі своєї першої стрижки</li>
+                <li>Приведи друга та отримай безкоштовну стрижку бороди</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        
+        <p>Пишіть нам на info@barbershop.com або телефонуйте за номером 123-456-7890.</p>
+        <p>Слідкуйте за нами в соціальних мережах, щоб дізнаватися про останні оновлення та стилі!</p>
+        <ul>
+            <li><a href="https://telegram.org">Telegram</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+        </ul>
+        <img src="barbershop-logo.png" alt="Barbershop Logo" style="width: 100px; height: 100px;">
+    </footer>
+</body>
+</html>
